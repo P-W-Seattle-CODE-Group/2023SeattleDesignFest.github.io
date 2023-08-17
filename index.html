@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2023 SDF | P&W+GLY</title>
+        <link rel="stylesheet" href="style.css">
+        <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+        <script type="importmap">
+        {
+            "imports": {
+            "three": "https://unpkg.com/three@0.154.0/build/three.module.js",
+            "three/examples/": "https://unpkg.com/three@0.154.0/examples/jsm/"
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <div id="landing-page">
+            <div id="landing-content">
+                <div id="landing-desc" class="text-medium">Welcome to the Perkins&Will and GLY 2023 SDF Block Party Pavilion! The following website is an interactive viewer of our pavilion model with some further detail about our design thinking and process. Please use the "Next" and "Back" buttons to move between views of the model, you can also adjust the view by single finger swiping on the model, and can zoom by pinch zooming on the model. We hope you enjoy your experience!</div>
+                <button id="enter-button" class="">Let's Begin!</button>
+            </div>
+        </div>
+        <div id="main-wrapper">
+            <div id="header">
+                <div id="header-text">
+                    <div id='header-title' class="text-large">Perkins&Will x GLY</div>
+                    <div id='header-desc-text' class="text-medium">2023 Seattle Design Festival</div>
+                </div>
+            </div>
+            <div id="model-viewer">
+            </div>
+            <div id="buttons">
+                <button id="back" class="toggle-btn">Back</button>
+                <button id="next" class="toggle-btn">Next</button>
+            </div>
+            <div id="footer">
+                <div id="footer-text" class="text-small">
+                    <p>2023 Seattle Design Festival | Perkins & Will + GLY | PW Seattle CODE</p>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="main.js"></script>
+    </body>
+</html>

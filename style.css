@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@keyframes fadeIn {
+    0% {opacity: 0%; margin-right: 100px; margin-left:100px;}
+    50% {opacity: 50%;}
+    100% {opacity:100%; margin-right: 5px; margin-left: 5px;}
+}
+
+@keyframes fadeSmooth {
+    0% {opacity: 0%;}
+    75% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    background-color: rgba(255,255,255,1);
+    background: url('././public/topo-background.png');
+    background-size: cover;
+    background-position: top;
+    background-blend-mode: multiply;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+body {
+    margin: auto;
+    height: 100%;
+}
+button {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(
+        135deg,
+        rgb(221, 72, 50) 50%,
+        rgb(242, 99, 68)
+    );
+    color: rgb(245, 231, 213);
+    border: 0px;
+    border-radius: 15px;
+    height: 40px;
+    font-size: 21px;
+    font-weight: 500;
+    margin: 0px 5px 0px 5px;
+    animation-name: fadeIn;
+    animation-duration: 2.5s;
+    animation-timing-function: ease;
+    box-shadow: 2px 3px 0px rgba(249, 204, 131, .95);
+}
+
+#landing-page {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(221, 72, 50);
+    background: url('public/waves-landing.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 600px;
+    z-index: 1;
+    transition: 
+        top 2s ease-in-out,
+        opacity 3s ease-in-out; 
+}
+
+#landing-content{
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    margin: auto;
+    color: rgb(242,242,242);
+    padding: 0% 0px 0px 0px;
+    text-align: center;
+    transition: 
+        height 1s ease-in-out,
+        opacity 1s ease-in-out;
+}
+
+#landing-desc {
+    padding: 25px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.text-large {
+    font-size: 24px;
+    line-height: 16px;
+    font-weight: 600;
+}
+.text-medium {
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+}
+.text-small {
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 300;
+}
+#main-wrapper {
+    background: rgba(255,250,252,1);
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+#header {
+    height: 200px;
+    background: url('public/waves-header.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 600px;
+    color: rgb(245, 231, 213);
+    text-align: center;
+}
+#header-title {
+    padding: 15px 0px 10px 0px;
+}
+#header-text {
+    padding: 0px 20px 0px 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#model-viewer {
+    height: 650px;
+    margin: 10px;
+    max-width: 580px;
+    animation-name: fadeSmooth;
+    animation-duration: 2.5s;
+    animation-timing-function: ease;
+}
+#buttons {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 0px 0px 10px 0px;
+}
+#back {
+    grid-column: 0 / 1;
+}
+#next {
+    grid-column: 2 / 3;
+}
+#footer {
+    height: 75px;
+    background: url('public/waves-footer.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 600px;
+    color: rgb(245, 231, 213);
+    font-size: 10px;
+    text-align: center;
+}
+#footer-text {
+    padding: 40px 1px 1px 1px;
+}
